@@ -4,11 +4,15 @@ using namespace std;
 
 int main()
 {
-    string a("123");
-    string b("123");
-    if ("234" == "234")
-        cout << "yes" << endl;
-    else
-        cout << "no" << endl;
+    int *a=new int[1000];
+    for(int i=0;i<1000;i++){
+        a[i]=i+1;
+    }
+    delete[] a;
+    int *b=new int[1000];
+    for(int i=0;i<100;i++){
+        cout<<b[i]<<endl;
+    }
+
     return 0;
 }
