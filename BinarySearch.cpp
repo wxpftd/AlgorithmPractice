@@ -8,13 +8,13 @@ int BinarySearch(Type list[], const Type &x, int n)
     int left = 0, right = n-1;
     while (left <= right)
     {
-        int middle = (left + right)/2;
-        if (list[middle] == x)
-            return middle;
-        else if (list[middle] > x)
+        int middle = left + ((right-left)>>1);
+        if (list[middle] > x)
             right = middle-1;
         else if (list[middle] < x)
             left = middle+1;
+		else
+            return middle;
     }
     return -1;
 }
