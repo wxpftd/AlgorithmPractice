@@ -1,4 +1,4 @@
 AlgorithmPractice
 =================
 
-Algorithm Practices In SCAU Course.
+Normal Algorithm Practices.
